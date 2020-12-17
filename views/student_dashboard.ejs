@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      <title>ff</title>
+</head>
+<link rel="stylesheet" href="/css/student_dashboard.css">
+<body>
+
+
+<!-- <img src="E:\desktop\all1\all\61Oslb-0BYL._SX425_-130x100 - Copy.jpg" class="satyam">
+</div> -->
+
+
+
+<div class="container">
+        <div class="box">
+            <div class="date">
+            Today
+      </div>
+        <%data.forEach((e)=>{%> 
+            
+             
+            <div style="display: flex;height: 25vh;">
+                  <div class="image">
+                        <img src="/upload/<%=e.image%>" alt="">
+                  </div>
+
+                  <div class="text">
+                        <a href="/studentdata/<%=e._id%>"><h2><%=e.name%> classroom updates</h2></a>
+                        <h4><%=e.text.slice(0,134)%>...</h4>
+                  </div>
+            </div>      
+                   
+        <%})%>
+
+      </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="studentdata_image.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="img/logo.png" alt="">
+		</div>
+	</div>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ff</title>
+    <link rel="stylesheet" href="/css/studentdata_image.css">
+</head>
+<body>
+
+<div class="container">
+	
+		<%data.forEach((e)=>{%>
+			
+
+		<div class="text">
+			<div class="inner">
+				<div class="data">
+					<img src="/upload/<%=e.image%>" alt="">
+					<h2><%=e.name%></h2>
+				</div>
+				<hr>
+				<div class="date">
+					<h3>Grade <%=e.grade%></h3>
+					<h4>15 Dec 2020 10:36 a.m</h4>
+				</div>
+				<div class="message"><pre><%=e.text%></pre>
+				</div>
+			</div>	
+		</div>
+			<%})%>
+
+	</div>
+</body>
+</html>

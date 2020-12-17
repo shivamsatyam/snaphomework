@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+
+}
+.image{
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.image img{
+    width: 42vw;
+    height: 81vh;
+    box-shadow: 1px 1px 20px 1px black;
+    margin: 5px 0px;
+}
+
+
+.text{
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+display: flex;
+    align-items: center;
+    margin: 8px 1px;
+}
+
+.data img{
+    width: 3vw;
+    border-radius: 50%;
+}
+
+.data h2{
+    margin-left: 12px;
+    font-family: cursive;
+}
+
+
+.date{
+display: flex;
+    justify-content: space-between;
+}
+
+
+.date h3{
+	font-weight: 100;
+    font-family: cursive;
+    margin: 5px 1px;
+}
+
+.date h4{
+	    font-family: cursive;
+    font-weight: 500;
+}
+
+
+.message{
+    font-family: cursive;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+
+.inner{
+	       width: 44vw;
+    margin: 5px 1px;
+    box-shadow: 1px 1px 9px 1px black;
+    padding: 16px;
+}
+
+
+
+
+

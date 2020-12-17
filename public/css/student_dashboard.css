@@ -1,0 +1,46 @@
+.container{
+
+}
+
+.date{
+    background-color: aliceblue;
+    font-family: cursive;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 7px 0px;
+}
+
+.box{
+     width: 56vw;
+    margin: 0px auto;
+    box-shadow: 1px 1px 12px 1px black;
+}
+
+.image{
+margin-top: 16px;
+    margin-left: 8px;
+}
+.image img{
+    border-radius: 50%;
+    width: 3.4vw;
+    height: 10.4vh;
+}
+
+
+.text{
+    margin-left: 13px;
+
+}
+
+
+.text h2{
+    font-family: cursive;
+}
+.text h4{
+    margin-top: 5px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+
+}

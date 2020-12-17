@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/teacher_dashboard.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+      
+	<div class="container">
+		<div class="side-bar">
+			<div class="logo-data">
+				<img src="upload/<%=image%>" alt="">
+				<div class="name-email">
+					<h2><%=name%></h2>
+					<p><%=email%></p>
+				</div>
+			</div>
+
+
+            <div class="content">
+            	<div class="child-content">
+            		<img src="img/download (2).jpeg" alt="">
+            		<h3>Activity</h3>
+            	</div>
+            	<div class="child-content">
+            		<img src="img/download (2).jpeg" alt="">
+            		<h3 id="classcode">My class Codes</h3></a>
+            	</div>
+            	<div class="child-content">
+            		<img src="img/download (2).jpeg" alt="">
+            		<h3>My Grades</h3>
+            	</div>
+            	<div class="child-content">
+            		<img src="img/download (2).jpeg" alt="">
+            		<h3>Class List</h3>
+            	</div>
+            	<div class="child-content">
+            		<img src="img/download (2).jpeg" alt="">
+            		<a href="/logout"><h3>log out</h3></a>
+            	</div>
+            	<div class="child-content">
+            		<img src="img/download (2).jpeg" alt="">
+            		<h3>Settings</h3>
+            	</div>
+            	<div class="child-content">
+            		<img src="img/download (2).jpeg" alt="">
+            		<h3>Help</h3>
+            	</div>
+            </div>
+
+
+
+		</div>
+
+
+		
+
+            <div class="added-class-container">
+                 
+
+                   <%data.forEach((e)=>{%>
+                              <div class="added-class">
+                        <div class="added-class-first">
+                              <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="added-class-second">
+                              <h3><%="Grade" + e.code%></h3>
+                              <h4><%=name%></h4>
+                             
+                        </div>
+                        
+                  </div>
+
+
+                        <%})%>
+
+            </div>
+
+
+            
+
+                  <div class="classcode classcode-remove">
+                        <button class="add-new-grade">
+                              <h3>+ Add New Grade</h3>
+                        </button>
+
+                        
+                              <div class="class-code-add-section" id="class">
+                                    <form action="" method="post">     
+                                          <div class="add-grading">
+                                                <div class="add-grading-first">
+                                                      <h3>Grade</h3>
+                                                      <input type="text" name="grade" maxlength="2" minlength="2">
+                                                </div>      
+                                                <div class="code">
+                                                      <h4><%=String(Date.now()).slice(2,13)%></h4>
+                                                </div>
+
+                                                <div>
+                                                    <button class="classcode-btn" id="btn-sm1" type="submit" style="width: 53px;" type="submit">
+                                                          add
+                                                    </button>
+                                                </div>      
+
+                                          </div>
+                                    </form>       
+                              </div>      
+
+
+                        
+                        <%data.forEach((e)=>{%>
+                              <div class="class-code-grade">
+                              <h3><%="Grade" + e.code%></h3>
+                              <h4><%=e.password%></h4>
+                               <a href="delete/<%=e.code%>/<%=name%>"><button class="remove">remove</button>
+                              </a>
+                        </div>
+
+                        <%})%>
+                        
+                        <hr>
+
+
+                        <div class="classcode-button-class">
+                          
+                              <button class="classcode-btn" id="btn-sm2">
+                                    cancel
+                              </button>
+
+                        </div>      
+                  </div>
+
+           
+
+
+
+
+                  <div class="updates updates-delete">
+                        <button class="update-child" id="text">Text message</button>
+                        <button class="update-child" id="image">Image</button>
+                        <button class="update-child" id="video">Video</button>
+                        <button class="update-child" id="invite">Invite</button>
+                  </div>
+
+
+                  <div class="text text-delete">
+                        <form action="/text" method="post" enctype="multipart/form-data">
+                              <h1>Enter your text here</h1>
+                              <textarea name="text"></textarea>
+                              <br>
+                              <br>
+                                <h4>Choose image</h4><input type="file" name="code_image">
+                              <h3>Select Your Grade</h3>
+
+                              <select name="grade" id="">
+                        <%data.forEach((e)=>{%>
+                              <option value="<%=e.password%>,<%=e.code%>">Grade <%=e.code%></option>
+                        <%})%>
+                              </select>
+                              
+                              <button type="Submit">Submit</button>
+
+                        </form>
+                  </div>
+
+                  <div class="image image-delete">
+                        <form action="/image" method="post">
+                              <h1>Enter your text here</h1>
+                              <textarea name="text"></textarea>
+                              <br>
+                              
+                              <h3>Select Your Grade</h3>
+
+                              <select name="grade" id="">
+                        <%data.forEach((e)=>{%>
+                              <option value="<%=e.password%>,<%=e.code%>">Grade <%=e.code%></option>
+                        <%})%>
+                              </select>
+                              
+                              <button type="Submit">Submit</button>
+
+                        </form>
+                  </div>
+
+
+
+		<button class="plus">
+			<p>+</p>
+		</button>
+
+	</div>
+
+<script type="text/javascript" src="js/teacher_dashboard.js"></script>
+</body>
+</html>
+

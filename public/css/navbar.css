@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.body{
+     background-color: #253651;
+}
+	.navbar{
+			width: 100%;
+    box-shadow: 3px 1px 10px black;
+       display: flex;
+    background-color: #0078ff;
+		}
+		.nav-first{
+			display: flex;
+			width: 60%;
+		}
+		.ul-list{
+display: flex;
+		}
+		.logo{
+			display: inline-block;
+/*border: 2px solid red;*/
+		}
+		.logo img{
+		    width: 63px;
+    height: 46px;
+    margin-top: 5px;
+    margin-left: 11px;
+		}
+		.li-item{
+      list-style: none;
+    margin-left: 19px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		}
+		.nav-second{
+			    /*border: 2px solid red;*/
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+		}
+		.search{
+
+		}
+		.search input{
+			width: 210px;
+    text-align: center;
+    height: 30px;
+    font-size: 19px;
+		}
+		.btn{
+			    width: 73px;
+    height: 33px;
+    margin-right: 11px;
+    margin-left: 5px;
+    background-color: orange;
+    border: 2px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+		}
+
+		#btn{
+			       width: 102px;
+    height: 43px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: wheat;
+    border-radius: 7px;
+    position: relative;
+    font-size: 19px;
+    right: 0%;
+    transition: 0.4s;	    
+		}
+		#btn:hover{
+			background-color: red;
+			color: white;
+
+		}
+		.a{
+			text-decoration: none;
+			color: white;
+		}
+
+
+
+		.hamburger-child{
+border: 2px solid black;
+    margin-top: 6px;
+		}
+		.hamburger {
+        border: 2px;
+    width: 41px;
+    display: none;
+    height: 37px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    background-color: white;
+    background: transparent;
+}
+
+
+
+		@media (min-width:0px) and (max-width:1200px){
+			
+			.hamburger{
+				display: block;
+			}
+			.ul-list{
+				display: none;
+			}
+			.nav-second{
+				display: none;
+			}
+		}
+
+
+.responsive{
+        border: 2px solid black;
+    width: 93vw;
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+
+.responsive ul{
+padding: 0;
+}
+
+.responsive ul li{
+    list-style: none;
+        list-style: none;
+    border: 2px solid;
+    padding: 4px;
+}
+
+.responsive ul li a{ 
+    text-decoration: none;
+    color: white;
+}
+.responsive ul li div{
+	text-align: center;
+}
+
+.responsive ul li input{
+        list-style: none;
+    width: 88vw;
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.responsive ul li button{
+        width: 73px;
+    height: 33px;
+    margin-right: 11px;
+    margin-left: 5px;
+    background-color: orange;
+    border: 2px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#btns{
+    width: 102px;
+    height: 43px;
+    background-color: white;
+    border: 3px solid red;
+    color: red;
+    border-radius: 7px;
+    position: relative;
+    font-size: 19px;
+    right: 0%;
+    transition: 0.4s;
+}
+.cut{
+    width: 40px;
+    height: 37px;
+    background: transparent;
+    border: 2px;
+    position: absolute;
+    top: 12%;
+    right: 10%;
+}
+.cut div{
+	    border: 2px solid white;
+}
+
+#cut-div-1{
+    transform: rotate(45deg);
+    top: 4px;
+    position: relative;
+}
+#cut-div-2{
+transform: rotate(141deg);
+}
+#btns:hover{
+			background-color: red;
+			color: white;
+		}
+
+.login-details{
+
+}
+
+.flexing{
+        display: flex;
+    justify-content: center;
+}
+.login-as{
+color: #0eff4e;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin: 13px 1px;
+}
+
+.image-login{
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 23vw;
+    place-items:center;
+    padding: 19px;
+}
+
+.image{
+
+}
+.image img{
+width: 8vw;
+}
+
+
+.image h3{
+color: white;
+    font-weight: 100;
+    text-align: center;
+    width: 8vw;
+    margin: 11px 1px;
+}
+
+
+
