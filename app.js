@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-const port = 3000 || process.env.port
+const port = process.env.PORT || 3000 
 const teacher = require('./login/teacher.js')
 const parent = require('./login/parent.js')
 const principle = require('./login/principle.js')
